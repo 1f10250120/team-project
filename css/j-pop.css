@@ -1,0 +1,282 @@
+/* 基本設定 */
+:root {
+    --primary-color: #87CEEB; /* スカイブルー */
+    --secondary-color: #ADD8E6; /* ライトブルー */
+    --accent-color: #6495ED; /* コーラルブルー */
+    --text-color: #333;
+    --light-text-color: #666;
+    --white-color: #fff;
+    --light-bg: #F0F8FF; /* アリスブルー */
+    --dark-bg: #4682B4; /* スチールブルー */
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif, 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-bg);
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* ボタン */
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-small {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.btn-small:hover {
+    background-color: var(--accent-color);
+}
+
+
+/* ヘッダー */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--white-color);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: var(--white-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--light-bg);
+}
+
+/* ヒーローセクション */
+#hero {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    text-align: center;
+    padding: 80px 0;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: var(--white-color);
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* 一般セクション */
+section {
+    padding: 60px 0;
+}
+
+section.bg-light {
+    background-color: var(--light-bg);
+}
+
+/* アーティストグリッド */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.artist-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.artist-card h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--dark-bg);
+}
+
+.artist-card p {
+    color: var(--light-text-color);
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+/* 新着リリースリスト */
+.release-list {
+    margin-top: 30px;
+}
+
+.release-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.release-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.release-info h3 {
+    margin: 0 0 5px 0;
+    color: var(--dark-bg);
+}
+
+.release-info p {
+    margin: 0;
+    color: var(--light-text-color);
+    font-size: 0.9em;
+}
+
+/* フッター */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    .artist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .release-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .release-item img {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero h2 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}

@@ -1,16 +1,179 @@
-.red {
-    color:red;
+/* --- 基本設定 --- */
+:root {
+    --main-color: #87CEEB; /* スカイブルー */
+    --light-main-color: #f0f8ff; /* アリスブルー */
+    --accent-color: #4682B4; /* スチールブルー */
+    --text-color: #333;
+    --light-text-color: #555;
+    --bg-color: #ffffff;
+    --font-family-base: 'Noto Sans JP', sans-serif;
+    --font-family-title: 'Playfair Display', serif;
 }
 
-h1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- ヘッダー --- */
+.header {
+    background-color: var(--light-main-color);
+    padding: 60px 0;
     text-align: center;
+    border-bottom: 2px solid var(--main-color);
 }
 
-ul {
+.site-title {
+    font-family: var(--font-family-title);
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.site-subtitle {
+    font-size: 1.1rem;
+    color: var(--light-text-color);
+}
+
+/* --- メインコンテンツ --- */
+main {
+    padding: 60px 0;
+}
+
+.section-title {
     text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--accent-color);
+    position: relative;
 }
 
-li {
+/* セクションタイトルの下線 */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--main-color);
+    margin: 10px auto 0;
+}
+
+/* --- テーマカード --- */
+.theme-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.theme-card {
+    background-color: #fff;
+    border: 1px solid #e0f2f7;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(135, 206, 235, 0.2);
+}
+
+.theme-title {
+    font-family: var(--font-family-title);
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.theme-description {
+    font-size: 0.95rem;
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+    flex-grow: 1; /* カードの高さを揃えるため */
+}
+
+.song-list {
     list-style: none;
-    float: left;
+    margin-bottom: 25px;
+}
+
+.song-list li {
+    padding: 5px 0 5px 20px;
+    position: relative;
+    color: #444;
+}
+
+/* 曲リストの先頭のアイコン */
+.song-list li::before {
+    content: '♪';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* ボタンをカードの下部に配置 */
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+
+/* --- フッター --- */
+.footer {
+    background-color: #f8f9fa;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+
+/* --- レスポンシブ対応 --- */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2rem;
+    }
+    
+    .site-subtitle {
+        font-size: 1rem;
+    }
+
+    .theme-cards {
+        grid-template-columns: 1fr;
+    }
 }

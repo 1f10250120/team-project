@@ -1,0 +1,189 @@
+body {
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #f0f8ff; 
+    color: #333;
+}
+
+header {
+    background-color: #4682B4; 
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #8B4513; 
+    border-bottom: 3px solid #FFD700; 
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.content-wrapper {
+    margin-bottom: 20px;
+}
+
+.content-wrapper p {
+    font-size: 1.1em;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background-color: #FFF8DC; 
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #FFE4B5; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    color: #2F4F4F; 
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-item p {
+    font-size: 1em;
+}
+
+.artist-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.artist-card {
+    background-color: #fdfdfd;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.artist-card h3 {
+    color: #4169E1; 
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.artist-card h4 {
+    color: #CD853F; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.artist-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.artist-card li {
+    margin-bottom: 8px;
+}
+
+.artist-card li a {
+    color: #1976D2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.artist-card li a:hover {
+    color: #CD5C5C; 
+    text-decoration: underline;
+}
+
+.call-to-action {
+    text-align: center;
+    font-size: 1.2em;
+    color: #8B4513; 
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #36454F; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+strong {
+    color: #DC143C; 
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    .content-wrapper {
+        text-align: center;
+    }
+
+    .features-grid,
+    .artist-card-container {
+        grid-template-columns: 1fr;
+    }
+}

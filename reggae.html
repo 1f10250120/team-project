@@ -4,99 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>レゲエの世界へようこそ</title>
-    <link rel="stylesheet" href="raggae.css">
+    <link rel="stylesheet" href="reggae.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>🎶 レゲエの世界へようこそ 🎶</h1>
-        <p>心と体を揺らす、自由なサウンドの探求</p>
+        <div class="container">
+            <h1>🎶 レゲエの世界へようこそ 🎶</h1>
+        </div>
     </header>
 
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">レゲエとは？</a></li>
+                <li><a href="#characteristics">特徴</a></li>
+                <li><a href="#history">歴史</a></li>
+                <li><a href="#artists-songs">アーティストと名曲</a></li>
+                <li><a href="#impact">影響</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <section class="intro">
-            <h2>レゲエとは？</h2>
-            <div class="content-wrapper">
+        <section id="hero">
+            <div class="container">
+                <h2>心と体を揺らす、自由なサウンドの探求</h2>
+                <p>ジャマイカ発祥のレゲエで、平和と愛のメッセージを感じましょう。</p>
+                <a href="#about" class="btn">レゲエの魅力を知る</a>
+            </div>
+        </section>
+
+        <section id="about" class="bg-light">
+            <div class="container">
+                <h2>レゲエとは？</h2>
                 <p>レゲエは、1960年代後半にジャマイカで誕生した音楽ジャンルです。独特のリズム、オフビートのギターカッティング、力強いベースラインが特徴で、聴く人の心と体を自然と揺らします。そのルーツは、スカやロックステディといった先行するジャマイカ音楽にあり、アメリカのR&Bやソウルミュージックの影響も受けて発展しました。</p>
-            </div>
-            <p>単なる音楽ジャンルに留まらず、レゲエは平和、愛、そして社会正義といったメッセージを強く発信する文化的な運動でもありました。多くのレゲエアーティストが、差別や貧困に対する抵抗、連帯の重要性を歌い上げ、世界中にそのメッセージを届けました。</p>
-        </section>
-
-        <section class="characteristics">
-            <h2>レゲエ音楽の特徴</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h3>✅ リズムとグルーヴ</h3>
-                    <p>レゲエの最も象徴的な特徴は、独特の**オフビート**です。通常、強調されるべき拍がスキップされたり、逆に弱拍が強調されたりすることで、独特の浮遊感のあるグルーヴを生み出します。特に、ベースラインとドラムのキックが織りなす「ワン・ドロップ」と呼ばれるリズムパターンは、レゲエの核となっています。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🎸 楽器編成</h3>
-                    <p>主な楽器はドラム、ベース、ギター、キーボードです。ギターは「チャクチャク」と呼ばれるカッティングでリズムを刻み、キーボードは泡立つような「バブル」奏法で独特のハーモニーを加えます。ベースラインは非常に重要で、メロディックかつ力強く、曲全体の土台を支えます。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🎤 歌詞とメッセージ</h3>
-                    <p>レゲエの歌詞は、社会的なテーマを扱うことが多いです。平和、抵抗、信仰（特にラスタファリ運動との関連）、貧困、差別、愛、連帯など、多岐にわたります。比喩や隠喩を用いた詩的な表現も多く、聴く人に深いメッセージを投げかけます。</p>
-                </div>
+                <p>単なる音楽ジャンルに留まらず、レゲエは平和、愛、そして社会正義といったメッセージを強く発信する文化的な運動でもありました。多くのレゲエアーティストが、差別や貧困に対する抵抗、連帯の重要性を歌い上げ、世界中にそのメッセージを届けました。</p>
             </div>
         </section>
 
-        <section class="history">
-            <h2>レゲエの歴史と発展</h2>
-            <div class="content-wrapper">
+        <section id="characteristics">
+            <div class="container">
+                <h2>レゲエ音楽の特徴</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-rhythm fa-3x"></i>
+                        <h3>リズムとグルーヴ</h3>
+                        <p>レゲエの最も象徴的な特徴は、独特の**オフビート**です。通常、強調されるべき拍がスキップされたり、逆に弱拍が強調されたりすることで、独特の浮遊感のあるグルーヴを生み出します。特に、ベースラインとドラムのキックが織りなす「ワン・ドロップ」と呼ばれるリズムパターンは、レゲエの核となっています。</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-guitar fa-3x"></i>
+                        <h3>楽器編成</h3>
+                        <p>主な楽器はドラム、ベース、ギター、キーボードです。ギターは「チャクチャク」と呼ばれるカッティングでリズムを刻み、キーボードは泡立つような「バブル」奏法で独特のハーモニーを加えます。ベースラインは非常に重要で、メロディックかつ力強く、曲全体の土台を支えます。</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-comment-alt fa-3x"></i>
+                        <h3>歌詞とメッセージ</h3>
+                        <p>レゲエの歌詞は、社会的なテーマを扱うことが多いです。平和、抵抗、信仰（特にラスタファリ運動との関連）、貧困、差別、愛、連帯など、多岐にわたります。比喩や隠喩を用いた詩的な表現も多く、聴く人に深いメッセージを投げかけます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="bg-light">
+            <div class="container">
+                <h2>レゲエの歴史と発展</h2>
                 <p>レゲエは、1960年代初頭に登場したスカからロックステディを経て、1960年代後半にその形を確立しました。初期のレゲエは、恋の歌やダンスチューンが中心でしたが、次第に社会的なメッセージが強まっていきます。</p>
+                <p>1970年代に入ると、**ボブ・マーリー&ザ・ウェイラーズ**の登場により、レゲエは世界的なムーブメントとなります。ボブ・マーリーは、その音楽とメッセージで、ジャマイカの文化とラスタファリ運動を世界に広めました。彼の死後も、数多くのレゲエアーティストが活躍し、ジャンルは多様化しながら進化を続けています。</p>
+                <p>現在では、ダンスホール、レゲエポップ、ラガマフィンなど、様々なサブジャンルが生まれ、世界中で愛され続けています。日本の音楽シーンにも大きな影響を与え、多くの日本人アーティストがレゲエを取り入れています。</p>
             </div>
-            <p>1970年代に入ると、**ボブ・マーリー&ザ・ウェイラーズ**の登場により、レゲエは世界的なムーブメントとなります。ボブ・マーリーは、その音楽とメッセージで、ジャマイカの文化とラスタファリ運動を世界に広めました。彼の死後も、数多くのレゲエアーティストが活躍し、ジャンルは多様化しながら進化を続けています。</p>
-            <p>現在では、ダンスホール、レゲエポップ、ラガマフィンなど、様々なサブジャンルが生まれ、世界中で愛され続けています。日本の音楽シーンにも大きな影響を与え、多くの日本人アーティストがレゲエを取り入れています。</p>
         </section>
 
-        <section class="artists-songs">
-            <h2>レゲエを代表するアーティストと名曲</h2>
-            <p>レゲエの魅力を深く知るために、外せないアーティストと彼らの代表曲をご紹介します。</p>
+        <section id="artists-songs">
+            <div class="container">
+                <h2>レゲエを代表するアーティストと名曲</h2>
+                <p>レゲエの魅力を深く知るために、外せないアーティストと彼らの代表曲をご紹介します。</p>
 
-            <div class="artist-card-container">
-                <div class="artist-card">
-                    <h3>👑 ボブ・マーリー (Bob Marley)</h3>
-                    <p>レゲエの象徴であり、世界的にも最も有名なミュージシャンの一人。彼の音楽は平和、愛、ラスタファリの信仰を伝え、世界中に影響を与えました。</p>
-                    <h4>代表曲:</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/results?search_query=Bob+Marley+One+Love" target="_blank">One Love / People Get Ready</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Bob+Marley+No+Woman%2C+No+Cry" target="_blank">No Woman, No Cry</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Bob+Marley+Redemption+Song" target="_blank">Redemption Song</a></li>
-                    </ul>
-                </div>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/300x200?text=Bob+Marley" alt="ボブ・マーリー">
+                        <h3>👑 ボブ・マーリー (Bob Marley)</h3>
+                        <p>レゲエの象徴であり、世界的にも最も有名なミュージシャンの一人。彼の音楽は平和、愛、ラスタファリの信仰を伝え、世界中に影響を与えました。</p>
+                        <h4>代表曲:</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/results?search_query=Bob+Marley+One+Love" target="_blank">One Love / People Get Ready</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Bob+Marley+No+Woman%2C+No+Cry" target="_blank">No Woman, No Cry</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Bob+Marley+Redemption+Song" target="_blank">Redemption Song</a></li>
+                        </ul>
+                    </div>
 
-                <div class="artist-card">
-                    <h3>🎸 ピーター・トッシュ (Peter Tosh)</h3>
-                    <p>ボブ・マーリーと共にウェイラーズのオリジナルメンバー。力強いメッセージ性と、鋭い社会的批判を込めた楽曲で知られています。</p>
-                    <h4>代表曲:</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/results?search_query=Peter+Tosh+Legalize+It" target="_blank">Legalize It</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Peter+Tosh+Equal+Rights" target="_blank">Equal Rights</a></li>
-                    </ul>
-                </div>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/300x200?text=Peter+Tosh" alt="ピーター・トッシュ">
+                        <h3>🎸 ピーター・トッシュ (Peter Tosh)</h3>
+                        <p>ボブ・マーリーと共にウェイラーズのオリジナルメンバー。力強いメッセージ性と、鋭い社会的批判を込めた楽曲で知られています。</p>
+                        <h4>代表曲:</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/results?search_query=Peter+Tosh+Legalize+It" target="_blank">Legalize It</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Peter+Tosh+Equal+Rights" target="_blank">Equal Rights</a></li>
+                        </ul>
+                    </div>
 
-                <div class="artist-card">
-                    <h3>🎤 ジミー・クリフ (Jimmy Cliff)</h3>
-                    <p>国際的に成功した初期のレゲエアーティストの一人。『ハーダー・ゼイ・カム』という映画の主演とサウンドトラックで世界的に名声を確立しました。</p>
-                    <h4>代表曲:</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/results?search_query=Jimmy+Cliff+Many+Rivers+to+Cross" target="_blank">Many Rivers to Cross</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Jimmy+Cliff+The+Harder+They+Come" target="_blank">The Harder They Come</a></li>
-                    </ul>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/300x200?text=Jimmy+Cliff" alt="ジミー・クリフ">
+                        <h3>🎤 ジミー・クリフ (Jimmy Cliff)</h3>
+                        <p>国際的に成功した初期のレゲエアーティストの一人。『ハーダー・ゼイ・カム』という映画の主演とサウンドトラックで世界的に名声を確立しました。</p>
+                        <h4>代表曲:</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/results?search_query=Jimmy+Cliff+Many+Rivers+to+Cross" target="_blank">Many Rivers to Cross</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Jimmy+Cliff+The+Harder+They+Come" target="_blank">The Harder They Come</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <p class="call-to-action">これらのアーティストの曲を聴けば、レゲエの多様な魅力に触れることができます。ぜひ、お気に入りの一曲を見つけてみてください！</p>
             </div>
-            <p class="call-to-action">これらのアーティストの曲を聴けば、レゲエの多様な魅力に触れることができます。ぜひ、お気に入りの一曲を見つけてみてください！</p>
         </section>
 
-        <section class="impact">
-            <h2>レゲエが世界に与えた影響</h2>
-            <p>レゲエは、音楽的な影響だけでなく、ファッション、思想、ライフスタイルなど、多方面にわたって世界に影響を与えました。その「ワン・ラブ」の精神は、国境や人種を超えた連帯の象徴となり、多くの人々に共感と希望を与えています。</p>
-            <p>あなたもぜひ、レゲエの奥深い世界に触れてみてください。きっと、新たな発見があるはずです。</p>
+        <section id="impact" class="bg-light">
+            <div class="container">
+                <h2>レゲエが世界に与えた影響</h2>
+                <p>レゲエは、音楽的な影響だけでなく、ファッション、思想、ライフスタイルなど、多方面にわたって世界に影響を与えました。その「ワン・ラブ」の精神は、国境や人種を超えた連帯の象徴となり、多くの人々に共感と希望を与えています。</p>
+                <p>あなたもぜひ、レゲエの奥深い世界に触れてみてください。きっと、新たな発見があるはずです。</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 レゲエ紹介サイト. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 レゲエ紹介サイト. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

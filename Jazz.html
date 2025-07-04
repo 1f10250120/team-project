@@ -6,96 +6,133 @@
     <title>ジャズの世界へようこそ</title>
     <link rel="stylesheet" href="jazz.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>🎷 ジャズの世界へようこそ 🎹</h1>
-        <p>自由な即興と洗練されたハーモニーの旅</p>
+        <div class="container">
+            <h1>🎷 ジャズの世界へようこそ 🎹</h1>
+        </div>
     </header>
 
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">ジャズとは？</a></li>
+                <li><a href="#characteristics">特徴</a></li>
+                <li><a href="#history">歴史</a></li>
+                <li><a href="#artists-songs">アーティストと名曲</a></li>
+                <li><a href="#impact">影響</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <section class="intro">
-            <h2>ジャズとは？</h2>
-            <div class="content-wrapper">
+        <section id="hero">
+            <div class="container">
+                <h2>自由な即興と洗練されたハーモニーの旅</h2>
+                <p>ジャズの奥深い世界を、音と歴史で探求しましょう。</p>
+                <a href="#about" class="btn">ジャズの旅へ出発</a>
+            </div>
+        </section>
+
+        <section id="about" class="bg-light">
+            <div class="container">
+                <h2>ジャズとは？</h2>
                 <p>ジャズは、20世紀初頭にアメリカ合衆国ルイジアナ州ニューオーリンズのアフリカ系アメリカ人コミュニティで生まれた音楽ジャンルです。ブルースやラグタイムをルーツに持ち、即興演奏、シンコペーション、スウィングといった要素が特徴です。多様な文化が融合した街で育まれ、瞬く間に世界中に広がり、様々なスタイルへと発展していきました。</p>
-            </div>
-            <p>ジャズは単なる音楽の形式に留まらず、自由な表現と個性の追求を象徴する芸術形式です。演奏者間の対話や予期せぬ展開が、聴衆を魅了する大きな要素となっています。</p>
-        </section>
-
-        <section class="characteristics">
-            <h2>ジャズ音楽の特徴</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h3>🎶 即興演奏（インプロヴィゼーション）</h3>
-                    <p>ジャズの最も重要な要素の一つが**即興演奏**です。決められたメロディやコード進行に基づきながらも、その場で新しいメロディやリズムを生み出します。これにより、同じ曲でも演奏するたびに異なる表情を見せ、毎回がユニークな体験となります。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🎵 スウィングとリズム</h3>
-                    <p>ジャズ特有の「**スウィング**」は、8分音符を均等に演奏するのではなく、跳ねるような感覚で演奏するリズムです。これにより、音楽に独特の躍動感とグルーヴが生まれます。また、ドラムやベースが複雑なリズムパターンを刻み、曲全体に推進力を与えます。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🎹 ハーモニーと複雑性</h3>
-                    <p>ジャズは、従来のクラシック音楽とは異なる、豊かな**ハーモニー**を用いることが特徴です。テンションノートやアッパー・ストラクチャー・トライアドなど、様々な音を重ねることで、洗練された響きと深みのあるサウンドを作り出します。これにより、聴くたびに新たな発見がある音楽となっています。</p>
-                </div>
+                <p>ジャズは単なる音楽の形式に留まらず、自由な表現と個性の追求を象徴する芸術形式です。演奏者間の対話や予期せぬ展開が、聴衆を魅了する大きな要素となっています。</p>
             </div>
         </section>
 
-        <section class="history">
-            <h2>ジャズの歴史と発展</h2>
-            <div class="content-wrapper">
+        <section id="characteristics">
+            <div class="container">
+                <h2>ジャズ音楽の特徴</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-music fa-3x"></i>
+                        <h3>即興演奏（インプロヴィゼーション）</h3>
+                        <p>ジャズの最も重要な要素の一つが**即興演奏**です。決められたメロディやコード進行に基づきながらも、その場で新しいメロディやリズムを生み出します。これにより、同じ曲でも演奏するたびに異なる表情を見せ、毎回がユニークな体験となります。</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-drum fa-3x"></i>
+                        <h3>スウィングとリズム</h3>
+                        <p>ジャズ特有の「**スウィング**」は、8分音符を均等に演奏するのではなく、跳ねるような感覚で演奏するリズムです。これにより、音楽に独特の躍動感とグルーヴが生まれます。また、ドラムやベースが複雑なリズムパターンを刻み、曲全体に推進力を与えます。</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-piano fa-3x"></i>
+                        <h3>ハーモニーと複雑性</h3>
+                        <p>ジャズは、従来のクラシック音楽とは異なる、豊かな**ハーモニー**を用いることが特徴です。テンションノートやアッパー・ストラクチャー・トライアドなど、様々な音を重ねることで、洗練された響きと深みのあるサウンドを作り出します。これにより、聴くたびに新たな発見がある音楽となっています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="bg-light">
+            <div class="container">
+                <h2>ジャズの歴史と発展</h2>
                 <p>ジャズは、ニューオーリンズでの誕生後、1920年代の**シカゴ・ジャズ**、1930年代の**スウィング・ジャズ**、そして1940年代の**ビバップ**へと発展しました。スウィング期にはデューク・エリントンやカウント・ベイシーといったビッグバンドが人気を博し、ビバップではチャーリー・パーカーやディジー・ガレスピーが即興演奏をより複雑かつ技巧的に進化させました。</p>
+                <p>その後も、1950年代の**クール・ジャズ**や**ハード・バップ**、1960年代の**フリー・ジャズ**、そして**ジャズ・フュージョン**など、多様なスタイルが生まれ続けています。それぞれの時代やアーティストによって、ジャズは常に変化し、進化を遂げてきました。</p>
             </div>
-            <p>その後も、1950年代の**クール・ジャズ**や**ハード・バップ**、1960年代の**フリー・ジャズ**、そして**ジャズ・フュージョン**など、多様なスタイルが生まれ続けています。それぞれの時代やアーティストによって、ジャズは常に変化し、進化を遂げてきました。</p>
         </section>
 
-        <section class="artists-songs">
-            <h2>ジャズを代表するアーティストと名曲</h2>
-            <p>ジャズの奥深さを知るために、歴史に名を刻んだ偉大なアーティストと彼らの代表曲をご紹介します。</p>
+        <section id="artists-songs">
+            <div class="container">
+                <h2>ジャズを代表するアーティストと名曲</h2>
+                <p>ジャズの奥深さを知るために、歴史に名を刻んだ偉大なアーティストと彼らの代表曲をご紹介します。</p>
 
-            <div class="artist-card-container">
-                <div class="artist-card">
-                    <h3>🎺 ルイ・アームストロング (Louis Armstrong)</h3>
-                    <p>「ジャズの父」と称されるトランペット奏者、歌手。その革新的な即興演奏と温かい歌声で、ジャズを世界的な人気ジャンルへと押し上げました。</p>
-                    <h4>代表曲:</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/results?search_query=Louis+Armstrong+What+a+Wonderful+World" target="_blank">What a Wonderful World</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Louis+Armstrong+Hello+Dolly" target="_blank">Hello, Dolly!</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Louis+Armstrong+Mack+the+Knife" target="_blank">Mack the Knife</a></li>
-                    </ul>
-                </div>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/300x200?text=Louis+Armstrong" alt="ルイ・アームストロング">
+                        <h3>🎺 ルイ・アームストロング (Louis Armstrong)</h3>
+                        <p>「ジャズの父」と称されるトランペット奏者、歌手。その革新的な即興演奏と温かい歌声で、ジャズを世界的な人気ジャンルへと押し上げました。</p>
+                        <h4>代表曲:</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/results?search_query=Louis+Armstrong+What+a+Wonderful+World" target="_blank">What a Wonderful World</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Louis+Armstrong+Hello+Dolly" target="_blank">Hello, Dolly!</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Louis+Armstrong+Mack+the+Knife" target="_blank">Mack the Knife</a></li>
+                        </ul>
+                    </div>
 
-                <div class="artist-card">
-                    <h3>🎷 マイルス・デイヴィス (Miles Davis)</h3>
-                    <p>常にジャズの最前線を走り続けたトランペット奏者。クール・ジャズ、ハード・バップ、モード・ジャズ、フュージョンと、様々なスタイルを牽引しました。</p>
-                    <h4>代表曲:</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/results?search_query=Miles+Davis+So+What" target="_blank">So What</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Miles+Davis+Blue+in+Green" target="_blank">Blue in Green</a></li>
-                    </ul>
-                </div>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/300x200?text=Miles+Davis" alt="マイルス・デイヴィス">
+                        <h3>🎷 マイルス・デイヴィス (Miles Davis)</h3>
+                        <p>常にジャズの最前線を走り続けたトランペット奏者。クール・ジャズ、ハード・バップ、モード・ジャズ、フュージョンと、様々なスタイルを牽引しました。</p>
+                        <h4>代表曲:</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/results?search_query=Miles+Davis+So+What" target="_blank">So What</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Miles+Davis+Blue+in+Green" target="_blank">Blue in Green</a></li>
+                        </ul>
+                    </div>
 
-                <div class="artist-card">
-                    <h3>🎤 エラ・フィッツジェラルド (Ella Fitzgerald)</h3>
-                    <p>「ジャズのファーストレディ」と呼ばれる伝説的ジャズシンガー。その並外れた歌唱力とスキャット（即興歌唱）で多くの人々を魅了しました。</p>
-                    <h4>代表曲:</h4>
-                    <ul>
-                        <li><a href="https://www.youtube.com/results?search_query=Ella+Fitzgerald+Summertime" target="_blank">Summertime</a></li>
-                        <li><a href="https://www.youtube.com/results?search_query=Ella+Fitzgerald+Dream+a+Little+Dream+of+Me" target="_blank">Dream a Little Dream of Me</a></li>
-                    </ul>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/300x200?text=Ella+Fitzgerald" alt="エラ・フィッツジェラルド">
+                        <h3>🎤 エラ・フィッツジェラルド (Ella Fitzgerald)</h3>
+                        <p>「ジャズのファーストレディ」と呼ばれる伝説的ジャズシンガー。その並外れた歌唱力とスキャット（即興歌唱）で多くの人々を魅了しました。</p>
+                        <h4>代表曲:</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/results?search_query=Ella+Fitzgerald+Summertime" target="_blank">Summertime</a></li>
+                            <li><a href="https://www.youtube.com/results?search_query=Ella+Fitzgerald+Dream+a+Little+Dream+of+Me" target="_blank">Dream a Little Dream of Me</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <p class="call-to-action">これらのアーティストの楽曲を通して、ジャズの多様な世界に触れてみてください。あなたのお気に入りのジャズに出会えるはずです！</p>
             </div>
-            <p class="call-to-action">これらのアーティストの楽曲を通して、ジャズの多様な世界に触れてみてください。あなたのお気に入りのジャズに出会えるはずです！</p>
         </section>
 
-        <section class="impact">
-            <h2>ジャズが世界に与えた影響</h2>
-            <p>ジャズは、20世紀の音楽だけでなく、文化、ファッション、社会全体に大きな影響を与えました。その自由な精神と既存の枠にとらわれない姿勢は、多くの芸術家や思想家にインスピレーションを与えています。</p>
-            <p>あなたもジャズのリズムに身を任せ、その奥深い世界に耳を傾けてみませんか？</p>
+        <section id="impact" class="bg-light">
+            <div class="container">
+                <h2>ジャズが世界に与えた影響</h2>
+                <p>ジャズは、20世紀の音楽だけでなく、文化、ファッション、社会全体に大きな影響を与えました。その自由な精神と既存の枠にとらわれない姿勢は、多くの芸術家や思想家にインスピレーションを与えています。</p>
+                <p>あなたもジャズのリズムに身を任せ、その奥深い世界に耳を傾けてみませんか？</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 ジャズ紹介サイト. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 ジャズ紹介サイト. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
+
